@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>&lt;beratoner&gt;</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: 'Courier New', monospace;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+    }
+    .tag {
+      color: #999;
+      margin-left: 1rem;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .exp-card {
+      border-left: 2px solid #999;
+      margin-left: 2rem;
+      padding-left: 1rem;
+      position: relative;
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: slideIn 1s forwards;
+      animation-delay: 0.3s;
+    }
+    .exp-card .dot {
+      width: 10px;
+      height: 10px;
+      background: linear-gradient(45deg, #0057b7, #003d91);
+      border-radius: 50%;
+      position: absolute;
+      left: -6px;
+      top: 10px;
+      box-shadow: 0 0 6px #003d91aa;
+    }
+    .exp-card h3 {
+      margin: 0.2rem 0;
+      font-size: 1.2rem;
+      color: #222;
+    }
+    .exp-card p {
+      margin: 0.2rem 0;
+      color: #555;
+    }
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .header {
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">&lt;beratoner&gt;</div>
+
+  <section class="section">
+    <div class="tag">&lt;experience&gt;</div>
+
+    <div class="exp-card">
+      <div class="dot"></div>
+      <h3>Apple Bağdat Caddesi</h3>
+      <p>Teknik Uzman – 2023 &mdash; Devam</p>
+      <p>Kullanıcı deneyimi, donanım testleri, yazılım çözümlemeleri.</p>
+    </div>
+
+    <div class="exp-card">
+      <div class="dot"></div>
+      <h3>DevOps Stajı</h3>
+      <p>2025 Yaz</p>
+      <p>Docker, WSL, Prometheus, Grafana ile gözlemleme paneli.</p>
+    </div>
+
+    <div class="exp-card">
+      <div class="dot"></div>
+      <h3>Freelance Projeler</h3>
+      <p>2024 &mdash; Devam</p>
+      <p>HTML, CSS, JS projeleri, GitHub'da yayınlandı.</p>
+    </div>
+
+    <div class="tag">&lt;/experience&gt;</div>
+  </section>
+
+</body>
+</html>
